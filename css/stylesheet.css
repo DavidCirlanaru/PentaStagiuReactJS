@@ -1,0 +1,248 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, #ccc);
+}/* ======= General Content */
+
+#container {
+    position: relative;
+    height: 30em;
+    width: 34.375em;
+    background-color: #787878;
+    margin: 3.25em auto;
+    padding: 1.25em;
+    border-radius: 1em;
+    box-shadow: 0em 0.25em 0em 0em #808080;
+    -moz-box-shadow: 0em 0.25em 0em 0em #808080;
+    -webkit-box-shadow: 0em 0.25em 0em 0em #808080;
+}/* ======= /General Content */
+
+/* ======= Alert Buttons */
+#score {
+    position: absolute;
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 0.625em;
+    left: 31.25em;
+    border-radius: 0.15em;
+    box-shadow:0em 0.25em 0em #9da853;
+    -moz-box-shadow:0em 0.25em 0em #9da853;
+    -webkit-box-shadow:0em 0.25em 0em #9da853;
+}
+
+#correct {
+  position: absolute;
+  font-size: 1.25em;
+  padding: 0.625em;
+  top: 0.5em;
+  left: 12.25em;
+  border-radius: 0.15em;
+  background-color: #33FF66;
+  color: 	#F8F8F8;
+  display: none;
+}
+
+#wrong {
+  position: absolute;
+  font-size: 1.25em;
+  padding: 0.625em;
+  left: 12.25em;
+  top: 0.5em;
+  border-radius: 0.15em;
+  background-color: tomato;
+  color: 	#F8F8F8;
+  display:none;
+
+}/* ======== /Allert Buttons */
+
+
+
+/* ======= Main Display */
+#question {
+    width: 5em;
+    height: 1.3em;
+    margin: 0.5em auto 0.25em auto;
+    background-color: #A6B8A2;
+    border-radius: 0.2em;
+    font-size: 5.25em;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+
+}
+
+#instruction {
+    width: 25.125em;
+    height: 2.125em;
+    margin: 0.2em auto;
+    background-color: #24A19C;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 2em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color : white;
+    padding: 0.25em;
+    box-shadow: 0em 0.25em #1A7672;
+    -webkit-box-shadow: 0em 0.25em #1A7672;
+    -moz-box-shadow: 0em 0.25em #1A7672;
+}/* ======= /Main Display */
+
+
+
+/* ======= Answer Boxes */
+
+#choices {
+  height: 5.25em;
+  width: 32.125em;
+  margin: 1.2em auto;
+  padding: 1em;
+
+}
+
+.box {
+  position: relative;
+  width: 6.5em;
+  height: 5em;
+  background-color: #45494C;
+  float: left;
+  margin-right: 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  text-align: center;
+  line-height: 5em;
+  color: #E8E0D2;
+  box-shadow: 0em 0.25em #191A1B;
+  -webkit-box-shadow: 0em 0.25em #191A1B;
+  -moz-box-shadow: 0em 0.25em #191A1B;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+.box:hover {
+  background-color: #505050;
+  box-shadow: none;
+}
+
+.box:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  top: 0.25em;
+
+}
+
+#box4 {
+    margin-right: 0;
+}/* ======= /Answer Boxes */
+
+
+/* ======= Bottom Boxes */
+#startGame {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.1em;
+  width: 100%;
+  height: 3em;
+  background-color: #EC6C16;
+  border-radius: 0.5em;
+  cursor: pointer;
+  text-align: center;
+  line-height: 3em;
+  color: #E8E0D2;
+  box-shadow: 0em 0.25em #B64900;
+  -webkit-box-shadow: 0em 0.25em #B64900;
+  -moz-box-shadow: 0em 0.25em #B64900;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  
+}
+#resetGame {
+  position: relative;
+  margin: 0 auto;
+  padding: 0.1em;
+  width: 100%;
+  height: 3em;
+  background-color: #CC3300;
+  border-radius: 0.5em;
+  cursor: pointer;
+  text-align: center;
+  line-height: 3em;
+  color: #E8E0D2;
+  box-shadow: 0em 0.25em #CC3300;
+  -webkit-box-shadow: 0em 0.25em #CC3300;
+  -moz-box-shadow: 0em 0.25em #CC3300;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  display:none;
+}
+
+#startGame:hover {
+  background-color: #FF9933;
+  box-shadow: none;
+}
+
+#startGame:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  top: 0.25em;
+}
+#resetGame:hover {
+  background-color: #FF9933;
+  box-shadow: none;
+}
+#resetGame:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  top: 0.25em;
+}
+#timeRemaining {
+  position: absolute;
+  width: 12.5em;
+  padding:  0.625em;
+  text-align: center;
+  top: 29.5em;
+  left: 22em;
+  color: #E4DCCF;
+  border-radius: 0.5em;
+  background-color: #C62E2E;
+  box-shadow: 0em 0.25em #932424;
+  -webkit-box-shadow: 0em 0.25em #932424;
+  -moz-box-shadow: 0em 0.25em #932424;
+  display: none;
+}
+
+/* ======= /Bottom Boxes */
+
+/* ======= Game Over*/
+#gameOver {
+  position:fixed;
+  z-index:100000;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background-color:rgba(0,0,0,0.8);
+  font-size:80px;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  text-indent:0;
+  line-height:50px;
+  display: none;
+
+}
+@keyframes gameOver{
+0%{left:-5000px;bottom:100%;}
+97%{left:-5000px;bottom:100%;}
+100%{ left:0px;}
+}
